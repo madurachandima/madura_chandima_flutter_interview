@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:madura_chandima_flutter_interview/configs/color_config.dart';
+import 'package:madura_chandima_flutter_interview/configs/text_style_config.dart';
 import 'package:madura_chandima_flutter_interview/screens/home.dart';
 import 'package:sizer/sizer.dart';
 
@@ -17,7 +19,18 @@ class MyApp extends StatelessWidget {
       builder: (context, orientation, deviceType) => GetMaterialApp(
         title: 'Flutter Demo',
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(),
+        theme: ThemeData(
+            textTheme: TextTheme(
+                headline1: TextStyle(
+                    color: ColorConfig.black,
+                    fontFamily: BOLD_FONT,
+                    fontSize: 15.sp,
+                    fontWeight: FontWeight.bold),
+                headline2: TextStyle(
+                    color: ColorConfig.white,
+                    fontFamily: BOLD_FONT,
+                    fontSize: 15.sp,
+                    fontWeight: FontWeight.w600))),
         home: const Home(),
       ),
     );
