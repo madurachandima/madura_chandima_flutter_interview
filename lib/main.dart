@@ -30,7 +30,12 @@ class MyApp extends StatelessWidget {
                     color: ColorConfig.white,
                     fontFamily: BOLD_FONT,
                     fontSize: 15.sp,
-                    fontWeight: FontWeight.w600))),
+                    fontWeight: FontWeight.w600),
+                headline3: TextStyle(
+                    color: ColorConfig.black,
+                    fontFamily: BOLD_FONT,
+                    fontSize: 13.sp,
+                    fontWeight: FontWeight.bold))),
         home: const Home(),
       ),
     );
