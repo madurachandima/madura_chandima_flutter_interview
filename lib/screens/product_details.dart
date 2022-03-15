@@ -136,7 +136,7 @@ class ProductDetails extends StatelessWidget {
                       SizedBox(height: 4.h),
                       SizedBox(
                         width: double.infinity,
-                        height: 8.h,
+                        height: 9.h,
                         child: Customebutton(
                             callbackFunction: () {},
                             buttontText: Text(

@@ -35,7 +35,7 @@ class VRCard extends StatelessWidget {
                         height: 2.h,
                       ),
                       SizedBox(
-                        height: 4.6.h,
+                        height: 6.h,
                         child: Customebutton(
                             callbackFunction: () {},
                             buttontText: const Text(

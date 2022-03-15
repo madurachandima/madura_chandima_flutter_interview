@@ -37,18 +37,20 @@ class Home extends StatelessWidget {
                 child: const VRCard(),
               ),
               SizedBox(
-                height: 2.h,
+                height: 4.h,
               ),
               SizedBox(
                   width: double.infinity,
-                  height: 40,
+                  height: 50,
                   child: ListView.builder(
                     itemCount: Constents().itemCategory.length,
                     shrinkWrap: true,
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
                       return Obx(() => Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 15),
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 15,
+                            ),
                             child: Customebutton(
                                 callbackFunction: () {
                                   _controlller.selectesIndex.value = index;
@@ -70,7 +72,7 @@ class Home extends StatelessWidget {
                     },
                   )),
               SizedBox(
-                height: 2.h,
+                height: 4.h,
               ),
               SizedBox(
                 width: double.infinity,

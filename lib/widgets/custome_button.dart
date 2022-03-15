@@ -13,12 +13,15 @@ class Customebutton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-        style: ElevatedButton.styleFrom(
-            shape:
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-            primary: (backgroundColor)),
-        onPressed: callbackFunction,
-        child: buttontText!);
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 8.0),
+      child: ElevatedButton(
+          style: ElevatedButton.styleFrom(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10)),
+              primary: (backgroundColor)),
+          onPressed: callbackFunction,
+          child: buttontText!),
+    );
   }
 }
